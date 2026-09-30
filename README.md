@@ -1,20 +1,20 @@
 # London Airbnb Property Viewer (Java GUI)
 
-> A desktop application that loads London Airbnb listings from CSV and lets users browse them, save favourites, view locations on a map and see viewing statistics.
+> A desktop app that loads London Airbnb listings from a CSV file. You can browse them, save favourites, open each on a map and see your viewing stats.
 
-🔒 **The source code is in a private repository** because this was university coursework at King's College London. I'm happy to walk through the code on request.
+🔒 The code sits in a private repository because this was King's College London coursework. Ask me and I'll walk you through it.
 
 ## Features
-- Loads and parses a real-world Airbnb dataset from CSV
-- Browses properties one at a time, with next/previous navigation that wraps around at either end
-- Toggles favourites, with the favourite status shown in the status bar
-- Opens the current listing's location on a map (I fixed an existing bug where it used the wrong listing)
-- A statistics window showing the number of properties viewed and the average price of those viewed
+- Reads a real Airbnb dataset from CSV
+- Shows one listing at a time, with next and previous buttons that wrap round at each end
+- Lets you mark favourites and shows the status in the status bar
+- Opens the listing on a map. I fixed a bug that sent it to the wrong listing
+- A stats window with the number of listings you've viewed and their average price
 
 ## Design
-The code keeps data (`Property`, `Portfolio`), application logic (`PropertyViewer`) and the GUI (`PropertyViewerGUI`) in separate classes, with a focus on correctness, readability and documentation.
+I split the code into data (`Property`, `Portfolio`), logic (`PropertyViewer`) and interface (`PropertyViewerGUI`), and documented each method.
 
-## Skills demonstrated
+## Skills
 Java · GUI event handling · file I/O and CSV parsing · object-oriented design
 
 ## Tech stack
